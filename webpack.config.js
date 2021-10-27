@@ -9,7 +9,7 @@ module.exports = {
 		filename: 'bundle.js',
 		publicPath: '/'
 	},
-    mode: 'development',
+	mode: 'development',
 	resolve: {
 		extensions: ['.js', '.jsx'],
 	},
@@ -36,8 +36,8 @@ module.exports = {
 					"style-loader",
 					"css-loader",
 					"sass-loader",
-				]
-			} 
+				],
+			}
 		]
 	},
 	plugins: [
@@ -51,8 +51,5 @@ module.exports = {
 	],
 	devServer: {
 		historyApiFallback: true,
-		allowedHosts: path.join(__dirname, 'dist'),
-		compress: true,
-		port: 3005, 
 	}
 }
